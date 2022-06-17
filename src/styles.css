@@ -1,0 +1,149 @@
+body {
+  margin: 50px auto;
+  max-width: 1000px;
+  font-family: "Gill Sans", sans-serif;
+}
+
+:root {
+  --primary-color: #6c63ff;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+.greetings {
+  margin-top: 150px;
+}
+
+h3 {
+  opacity: 0.6;
+}
+
+.logo {
+  width: 90px;
+}
+
+.arrow {
+  width: 120px;
+  display: block;
+  margin: 0 auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-button {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  border: 1px solid #fff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 15px;
+  margin: 20px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  transition: all 200ms ease-in-out;
+}
+
+.contact-button:hover {
+  background: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.about-button {
+  background: white;
+  box-shadow: var(--box-shadow);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 15px;
+  margin: 20px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  transition: all 200ms ease-in-out;
+}
+
+.about-button:hover {
+  background: var(--primary-color);
+  color: white;
+  border: 1px solid white;
+}
+
+.launch-button {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  border: 1px solid #fff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 15px;
+  margin: 20px;
+  letter-spacing: 1px;
+  font-weight: lighter;
+  transition: all 200ms ease-in-out;
+  display: block;
+  margin: 0 auto;
+}
+
+.launch-button:hover {
+  background: white;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.title-about {
+  margin-top: 150px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 30px;
+}
+
+@media (max-width: 576px) {
+  .row-weather {
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .title-about {
+    font-size: 30px;
+  }
+  .subtitle-about {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  .arrow {
+    width: 90px;
+    margin-top: 15px;
+  }
+  .sub-subtitle-about {
+    font-size: 13px;
+    margin: 0 5px;
+  }
+}
